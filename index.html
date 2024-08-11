@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            position: relative;
+            margin: 0;
+            height: 1000px;
+            background-color: #E3E2DF;
+        }
+
+        body::before {
+            content: "";
+            background: url("pune.jpeg");
+            background-position: center;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #E3E2DF;
+            font-size: 60px;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: none;
+            background-color: #9A1750;
+            margin-top: 0px;
+            padding: 20px;
+            border-bottom: 5px solid #EE4C7C;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        p {
+            background-color: rgba(227, 175, 188, 0.8);
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            color: #5D001E;
+        }
+
+        #img1 {
+            width: 350px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: 5px solid #5D001E;
+            border-radius: 10px;
+        }
+
+        #img2 {
+            width: 300px;
+            height: 150px;
+            transition: transform 0.2s;
+            border: 2px solid #5D001E;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        #img2:hover {
+            transform: scale(1.5);
+        }
+
+        h2 {
+            text-decoration: underline;
+            color: #5D001E;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .navbar {
+            background-color: #5D001E;
+            padding: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #E3E2DF !important;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #EE4C7C !important;
+        }
+
+        .dropdown-menu {
+            background-color: #E3AFBC;
+        }
+
+        .dropdown-item {
+            color: #5D001E !important;
+        }
+
+        .dropdown-item:hover {
+            background-color: #9A1750;
+            color: #E3E2DF !important;
+        }
+
+        .img-label {
+            text-align: center;
+            color: #5D001E;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .fixed-top-space {
+            padding-top: 75px;
+        }
+
+        marquee {
+            background-color: #5D001E;
+            color: #E3E2DF;
+            font-size: 24px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pune City</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clg.html">Colleges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historic.html">Historic Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="it.html">IT Parks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transport.html">Transport</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Restaurants</a></li>
+                            <li><a class="dropdown-item" href="#">Shopping</a></li>
+                            <li><a class="dropdown-item" href="#">Nightlife</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add some space below the fixed navbar -->
+    <div class="fixed-top-space"></div>
+
+    <!-- Marquee Section -->
+    <marquee behavior="scroll" direction="left">
+        Hi Sai here Welcome to Pune City! Explore our diverse attractions, historic places, and more.
+    </marquee>
+
+    <h1>Welcome to Pune City!</h1>
+
+    <div class="container text-center">
+        <img id="img1" src="img1.jpeg" class="img-fluid my-3" />
+
+        <p>Pune is a sprawling city in the western Indian state of Maharashtra. It was once the base of the Peshwas (prime ministers) of the Maratha Empire, which lasted from 1674 to 1818. It's known for the grand Aga Khan Palace, built in 1892 and now a memorial to Mahatma Gandhi, whose ashes are preserved in the garden. The 8th-century Pataleshwar Cave Temple is dedicated to the Hindu god Shiva.</p>
+
+        <div class="row my-4">
+            <div class="col-3">
+                <a href="clg.html">
+                    <img id="img2" src="clg.jpg" class="img-fluid" />
+                </a>
+                <p class="img-label">Colleges</p>
+            </div>
+            <div class="col-3">
+                <a href="historic.html">
+                    <img id="img2" src="historic.jpg" class="img-fluid" />
+                </a>
+                <p class="img-label">Historic Places</p>
+            </div>
+            <div class="col-3">
+                <a href="it.html">
+                    <img id="img2" src="ipt.jpg" class="img-fluid" />
+                </a>
+                <p class="img-label">IT Parks</p>
+            </div>
+            <div class="col-3">
+                <a href="transport.html">
+                    <img id="img2" src="tpt.jpg" class="img-fluid" />
+                </a>
+                <p class="img-label">Transport</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

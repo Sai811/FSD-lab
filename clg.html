@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges in Pune</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Karma", sans-serif;
+            background-color: #E3E2DF;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #E3E2DF;
+            font-size: 60px;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: none;
+            background-color: #9A1750;
+            margin-top: 0px;
+            padding: 20px;
+            border-bottom: 5px solid #EE4C7C;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .navbar {
+            background-color: #5D001E;
+            padding: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #E3E2DF !important;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #EE4C7C !important;
+        }
+
+        .college-grid {
+            margin-top: 50px;
+        }
+
+        .college-card {
+            background-color: #E3AFBC;
+            border: 2px solid #9A1750;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .college-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .college-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .college-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #5D001E;
+            margin-bottom: 10px;
+        }
+
+        .college-description {
+            font-size: 16px;
+            color: #5D001E;
+            flex-grow: 1; /* Ensures even space distribution */
+        }
+
+        .fixed-top-space {
+            padding-top: 75px;
+        }
+
+        .row.equal-height {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-lg-4,
+        .col-md-6,
+        .col-sm-12 {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .row.equal-height .col-lg-4 .college-card,
+        .row.equal-height .col-md-6 .college-card,
+        .row.equal-height .col-sm-12 .college-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .table-container {
+            margin-top: 50px;
+        }
+
+        .table-container table {
+            background-color: #E3AFBC;
+            border: 2px solid #9A1750;
+            border-radius: 10px;
+        }
+
+        .table-container th,
+        .table-container td {
+            text-align: center;
+            color: #5D001E;
+        }
+
+        .table-container th {
+            background-color: #9A1750;
+            color: #E3E2DF;
+        }
+
+        .table-container td {
+            background-color: #E3E2DF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Pune City</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historic.html">Historic Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="it.html">IT Parks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transport.html">Transport</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Restaurants</a></li>
+                            <li><a class="dropdown-item" href="#">Shopping</a></li>
+                            <li><a class="dropdown-item" href="#">Nightlife</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add space below the fixed navbar -->
+    <div class="fixed-top-space"></div>
+
+    <!-- Header -->
+    <h1>Colleges in Pune</h1>
+
+    <!-- Colleges Grid -->
+    <div class="container college-grid">
+        <div class="row equal-height">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="college-card">
+                    <img src="college1.jpeg" alt="COEP" class="college-image">
+                    <div class="college-name">College of Engineering Pune (COEP)</div>
+                    <div class="college-description">COEP is one of the oldest engineering colleges in India, known for its heritage and excellence in education.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="college-card">
+                    <img src="college2.jpeg" alt="MIT WPU" class="college-image">
+                    <div class="college-name">MIT World Peace University (MIT WPU)</div>
+                    <div class="college-description">MIT WPU offers a range of programs and is known for its emphasis on peace and holistic education.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="college-card">
+                    <img src="college3.jpeg" alt="PICT" class="college-image">
+                    <div class="college-name">Pune Institute of Computer Technology (PICT)</div>
+                    <div class="college-description">PICT is highly regarded for its focus on computer science and IT programs.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="college-card">
+                    <img src="college4.jpeg" alt="DY Patil" class="college-image">
+                    <div class="college-name">DY Patil College of Engineering</div>
+                    <div class="college-description">DY Patil is known for its modern campus and diverse range of engineering programs.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="college-card">
+                    <img src="college5.jpeg" alt="Fergusson College" class="college-image">
+                    <div class="college-name">Fergusson College</div>
+                    <div class="college-description">Fergusson College is renowned for its arts and science programs, with a rich history dating back to 1885.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="college-card">
+                    <img src="college6.jpeg" alt="Symbiosis" class="college-image">
+                    <div class="college-name">Symbiosis International University</div>
+                    <div class="college-description">Symbiosis is a leading private university offering a wide range of courses and has a global presence.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="college-card">
+                    <img src="college7.jpeg" alt="PCCOE" class="college-image">
+                    <div class="college-name">Pimpri Chinchwad College of Engineering (PCCOE)</div>
+                    <div class="college-description">PCCOE is a well-known institution in the Pune region, offering quality education in engineering.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="container table-container">
+        <h2 class="text-center mb-4">Colleges Overview</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>College Name</th>
+                    <th>Location</th>
+                    <th>Programs Offered</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>College of Engineering Pune (COEP)</td>
+                    <td>Pune</td>
+                    <td>Engineering, Management</td>
+                </tr>
+                <tr>
+                    <td>MIT World Peace University (MIT WPU)</td>
+                    <td>Pune</td>
+                    <td>Engineering, Management, Arts, Sciences</td>
+                </tr>
+                <tr>
+                    <td>Pune Institute of Computer Technology (PICT)</td>
+                    <td>Pune</td>
+                    <td>Computer Science, IT</td>
+                </tr>
+                <tr>
+                    <td>DY Patil College of Engineering</td>
+                    <td>Pune</td>
+                    <td>Engineering, Management</td>
+                </tr>
+                <tr>
+                    <td>Fergusson College</td>
+                    <td>Pune</td>
+                    <td>Arts, Sciences</td>
+                </tr>
+                <tr>
+                    <td>Symbiosis International University</td>
+                    <td>Pune</td>
+                    <td>Engineering, Management, Law, Design</td>
+                </tr>
+                <tr>
+                    <td>Pimpri Chinchwad College of Engineering (PCCOE)</td>
+                    <td>Pune</td>
+                    <td>Engineering, Management</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

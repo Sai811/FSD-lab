@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport in Pune</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Karma", sans-serif;
+            background-color: #E3E2DF;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #E3E2DF;
+            font-size: 60px;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: none;
+            background-color: #9A1750;
+            margin-top: 0px;
+            padding: 20px;
+            border-bottom: 5px solid #EE4C7C;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .navbar {
+            background-color: #5D001E;
+            padding: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #E3E2DF !important;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #EE4C7C !important;
+        }
+
+        .transport-grid {
+            margin-top: 50px;
+        }
+
+        .transport-card {
+            background-color: #E3AFBC;
+            border: 2px solid #9A1750;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .transport-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .transport-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .transport-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #5D001E;
+            margin-bottom: 10px;
+        }
+
+        .transport-description {
+            font-size: 16px;
+            color: #5D001E;
+            flex-grow: 1; /* Ensures even space distribution */
+        }
+
+        .fixed-top-space {
+            padding-top: 75px;
+        }
+
+        .row.equal-height {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-lg-4,
+        .col-md-6,
+        .col-sm-12 {
+            display: flex;
+            align-items: stretch;
+        }
+
+        /* Ensures equal height for all transport cards */
+        .row.equal-height .col-lg-4 .transport-card,
+        .row.equal-height .col-md-6 .transport-card,
+        .row.equal-height .col-sm-12 .transport-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Pune City</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historic.html">Historic Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="it.html">IT Parks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transport.html">Transport</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Restaurants</a></li>
+                            <li><a class="dropdown-item" href="#">Shopping</a></li>
+                            <li><a class="dropdown-item" href="#">Nightlife</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add space below the fixed navbar -->
+    <div class="fixed-top-space"></div>
+
+    <!-- Header -->
+    <h1>Transport in Pune</h1>
+
+    <!-- Transport Grid -->
+    <div class="container transport-grid">
+        <div class="row equal-height">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="transport-card">
+                    <img src="bus.jpg" alt="Pune Bus Services" class="transport-image">
+                    <div class="transport-name">Pune Bus Services</div>
+                    <div class="transport-description">Pune offers a comprehensive bus network operated by PMPML, connecting various parts of the city efficiently.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="transport-card">
+                    <img src="metro.jpeg" alt="Pune Metro" class="transport-image">
+                    <div class="transport-name">Pune Metro</div>
+                    <div class="transport-description">The Pune Metro provides a rapid transit option, significantly reducing travel time across the city.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="transport-card">
+                    <img src="auto-rickshaw.jpg" alt="Auto Rickshaws" class="transport-image">
+                    <div class="transport-name">Auto Rickshaws</div>
+                    <div class="transport-description">Auto rickshaws are a popular mode of transport in Pune, offering flexible and affordable travel options.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="transport-card">
+                    <img src="taxi.jpeg" alt="Taxis" class="transport-image">
+                    <div class="transport-name">Taxis</div>
+                    <div class="transport-description">Taxis provide a convenient and private travel option for residents and visitors in Pune.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="transport-card">
+                    <img src="bike-taxi.jpg" alt="Bike Taxis" class="transport-image">
+                    <div class="transport-name">Bike Taxis</div>
+                    <div class="transport-description">Bike taxis offer a quick and cost-effective way to navigate through traffic in Pune.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="transport-card">
+                    <img src="cycle-rickshaw.jpg" alt="Cycle Rickshaws" class="transport-image">
+                    <div class="transport-name">Cycle Rickshaws</div>
+                    <div class="transport-description">Cycle rickshaws are an eco-friendly and economical option for short distances in Pune.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
